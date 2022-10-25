@@ -7,7 +7,6 @@ import BookView1 from './BookView1';
 import BookView2 from './BookView2';
 import BookView3 from './BookView3';
 import BookView4 from './BookView4';
-import disableScroll from 'disable-scroll';
 
 const BookView = () => {
     const params = useParams();
