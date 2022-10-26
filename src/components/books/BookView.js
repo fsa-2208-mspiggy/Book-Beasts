@@ -14,7 +14,7 @@ const BookView = () => {
     const pages = books ? filterPages(books.pages) : undefined
     const dispatch = useDispatch();
 
-    //function to sort through pages linked list + add page number to each object
+    //function to sort through pages linked list + add page number to each obj
     function filterPages(pages){
         let orderedPages = [];
         let currentPage = pages.filter((page) => page.isFirstPage);
