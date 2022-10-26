@@ -51,7 +51,7 @@ const AllBooks = () => {
         navigate('/books',  {state: ''});
         window.location.reload();
       }
-console.log(books)
+
     return ( books ? (
         <>
         <div id='filter-wrap'>
