@@ -28,7 +28,7 @@ const InstructorPortal = () => {
                             <div className='blue-column'>
                             <h3>Guides</h3>
                             <div className="video-container">
-                                <iframe width="640" height="360" src="//www.youtube.com/embed/ukKd8W3Bvo0" frameBorder="0" allowFullScreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/aGl3ymEdNf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                         </div>
