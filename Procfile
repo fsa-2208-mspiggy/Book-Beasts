@@ -1,1 +1,1 @@
-web: npm run dev:noseed
+web: npm run dev:seedonce
