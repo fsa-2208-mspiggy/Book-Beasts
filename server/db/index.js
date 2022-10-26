@@ -31,23 +31,23 @@ Book.hasMany(Page);
 Tag.belongsToMany(Book, { through: BookTag });
 Book.belongsToMany(Tag, { through: BookTag });
 
-const syncAndSeed = async (closeConn=false) => {
-  try {
-    await db.sync({ force: true });
-    console.log("Connected to database!");
+// const syncAndSeed = async (closeConn=false) => {
+//   try {
+//     await db.sync({ force: true });
+//     console.log("Connected to database!");
 
-    const user = await User.bulkCreate(users, { individualHooks: true });
-    const student = await Student.bulkCreate(students, {individualHooks: true});
-    const book = await Book.bulkCreate(books);
-    const page = await Page.bulkCreate(pages);
-    const tag = await Tag.bulkCreate(tags);
+//     const user = await User.bulkCreate(users, { individualHooks: true });
+//     const student = await Student.bulkCreate(students, {individualHooks: true});
+//     const book = await Book.bulkCreate(books);
+//     const page = await Page.bulkCreate(pages);
+//     const tag = await Tag.bulkCreate(tags);
 
-    console.log(`Seeding Successful!`);
-    if (closeConn) await db.close();
-  } catch (error) {
-    console.error("Seeding database failed:", error);
-  }
-};
+//     console.log(`Seeding Successful!`);
+//     if (closeConn) await db.close();
+//   } catch (error) {
+//     console.error("Seeding database failed:", error);
+//   }
+// };
 
 if (require.main === module) {
   syncAndSeed(true);
